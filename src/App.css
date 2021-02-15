@@ -1,0 +1,75 @@
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: flex-start;
+}
+.main-container {
+  width: 90vw;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #b6b6b7;
+}
+
+.pros-cons-container {
+  display: flex;
+  width: 100%;
+  height: calc(90vh - 60px);
+
+}
+
+/*panel*/
+.panel-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #383737;
+  color: white;
+}
+
+.pros-cons-container .list-container .title-container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*divider*/
+.divider {
+  background: #b6b6b7;
+}
+
+.divider.horizontal {
+  height: 3px;
+}
+
+.divider.vertical {
+  width: 3px;
+}
+
+/*list*/
+.pros-cons-container .list-container {
+  flex: 1;
+}
+.pros-cons-container .list-container .list {
+  overflow-x: auto;
+  height: calc(90vh - 93px);
+  padding: 0 10px;
+}
+
+.list-item-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.list-item-container .list-item-text {
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+  margin-left: 7px;
+}
