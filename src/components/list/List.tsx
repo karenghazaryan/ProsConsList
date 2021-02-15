@@ -1,18 +1,13 @@
 import React, {useCallback, useEffect, useState} from "react";
 import ListItem from "./ListItem";
+
 type Item = {
     id: number,
     text: string,
     editing: boolean
 }
 
-const initialItems:Item[] = [
-    {
-        id: (new Date()).getTime(),
-        text: 'Go to hall',
-        editing: false
-    }
-]
+const initialItems:Item[] = []
 
 function List() {
     const [items, setItems] = useState(initialItems)
